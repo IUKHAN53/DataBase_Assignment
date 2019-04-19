@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1210.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.AddUserPageController">
+   <children>
+      <TextField fx:id="NameFld" layoutX="288.0" layoutY="154.0" prefHeight="39.0" prefWidth="271.0" promptText="Name" />
+      <TextField fx:id="EmailFld" layoutX="652.0" layoutY="154.0" prefHeight="39.0" prefWidth="271.0" promptText="Email" AnchorPane.rightAnchor="287.0" />
+      <TextField fx:id="DesigFld" layoutX="288.0" layoutY="240.0" prefHeight="39.0" prefWidth="271.0" promptText="Designation" />
+      <TextField fx:id="AdressFld" layoutX="652.0" layoutY="240.0" prefHeight="39.0" prefWidth="271.0" promptText="Adress" />
+      <TextField fx:id="UnameFld" layoutX="288.0" layoutY="358.0" prefHeight="39.0" prefWidth="271.0" promptText="Username" />
+      <PasswordField fx:id="PassFld" layoutX="652.0" layoutY="358.0" prefHeight="39.0" prefWidth="271.0" promptText="Password" />
+      <PasswordField fx:id="ConPassFld" layoutX="288.0" layoutY="422.0" prefHeight="39.0" prefWidth="271.0" promptText="Confirm Password" />
+      <JFXButton fx:id="AddBtn" buttonType="RAISED" defaultButton="true" layoutX="422.0" layoutY="495.0" onAction="#AddUser" prefHeight="61.0" prefWidth="106.0" style="-fx-background-color: #98dad1;" stylesheets="@UIs.css" text="Add" />
+      <JFXButton fx:id="CancelBtn" buttonType="RAISED" layoutX="668.0" layoutY="495.0" onAction="#CancelAdd" prefHeight="61.0" prefWidth="106.0" style="-fx-background-color: #98dad1;" text="Cancel" textFill="#171717" />
+      <ComboBox fx:id="typecombo" layoutX="652.0" layoutY="422.0" prefHeight="39.0" prefWidth="271.0" promptText="UserType" visibleRowCount="3" />
+      <Label layoutX="470.0" layoutY="22.0" prefHeight="68.0" prefWidth="271.0" text="ADD NEW USER" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font name="Ubuntu Mono" size="45.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

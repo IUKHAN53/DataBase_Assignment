@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="1210.0" style="-fx-background-color: skyblue;" stylesheets="@UIs.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.AddCustomerController">
+   <children>
+      <Label layoutX="458.0" layoutY="25.0" prefHeight="72.0" prefWidth="294.0" text="Add Customer">
+         <font>
+            <Font name="Ubuntu Mono" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameFld" layoutX="277.0" layoutY="139.0" prefHeight="47.0" prefWidth="294.0" promptText="Name" />
+      <TextField fx:id="phoneFld" layoutX="640.0" layoutY="139.0" prefHeight="47.0" prefWidth="294.0" promptText="Phone" />
+      <TextField fx:id="AddressFld" layoutX="277.0" layoutY="243.0" prefHeight="47.0" prefWidth="294.0" promptText="Address" />
+      <TextField fx:id="EmailFld" layoutX="640.0" layoutY="243.0" prefHeight="47.0" prefWidth="294.0" promptText="Email" />
+      <TextField fx:id="CompanyFld" layoutX="277.0" layoutY="339.0" prefHeight="47.0" prefWidth="294.0" promptText="Company" />
+      <TextField fx:id="RemarksFLd" layoutX="640.0" layoutY="339.0" prefHeight="47.0" prefWidth="294.0" promptText="Remarks" />
+      <JFXButton buttonType="RAISED" layoutX="361.0" layoutY="419.0" onAction="#addCustomer" prefHeight="83.0" prefWidth="126.0" text="Add" />
+      <JFXButton buttonType="RAISED" layoutX="724.0" layoutY="419.0" onAction="#Cancel" prefHeight="83.0" prefWidth="126.0" text="Cancel" />
+   </children>
+</AnchorPane>

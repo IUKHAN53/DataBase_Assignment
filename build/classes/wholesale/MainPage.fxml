@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.MainPageController">
+   <children>
+      <ImageView fitHeight="772.0" fitWidth="1366.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Resources/Background-Images-843.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="mainPane" layoutX="78.0" layoutY="129.0" opacity="0.81" prefHeight="570.0" prefWidth="1210.0" style="-fx-background-color: skyblue;">
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="387.0" layoutX="412.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Resources/WholesaleIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="111.0" fitWidth="449.0" layoutX="364.0" layoutY="193.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Resources/Wholesale.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="stockFld" editable="false" layoutX="472.0" layoutY="304.0" prefHeight="35.0" prefWidth="234.0" style="-fx-alignment: center;" />
+            <TextField fx:id="BuyerFld" editable="false" layoutX="472.0" layoutY="374.0" prefHeight="35.0" prefWidth="234.0" style="-fx-alignment: center;" />
+            <TextField fx:id="CustFld" editable="false" layoutX="472.0" layoutY="445.0" prefHeight="35.0" prefWidth="234.0" style="-fx-alignment: center;" />
+            <TextField fx:id="UsrFld" editable="false" layoutX="472.0" layoutY="514.0" prefHeight="35.0" prefWidth="234.0" style="-fx-alignment: center;" />
+            <Label layoutX="549.0" layoutY="285.0" text="Total Stocks" />
+            <Label layoutX="549.0" layoutY="358.0" text="Total Buyers" />
+            <Label layoutX="535.0" layoutY="429.0" text="Total Customers" />
+            <Label layoutX="552.0" layoutY="498.0" text="Total Users" />
+         </children></AnchorPane>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="230.0" layoutY="-2.0" overLayVisible="false" prefHeight="772.0" prefWidth="234.0" />
+      <HBox fx:id="hb" layoutX="278.0" layoutY="14.0" prefHeight="67.0" prefWidth="811.0" style="-fx-background-color: skyblue;" stylesheets="@UIs.css">
+         <children>
+            <JFXHamburger fx:id="NaviHam" prefHeight="64.0" prefWidth="65.0" stylesheets="@UIs.css" />
+            <JFXButton accessibleText="one" layoutX="10.0" layoutY="10.0" prefHeight="71.0" prefWidth="105.0" text="Add Users" />
+            <JFXButton accessibleText="two" layoutX="115.0" layoutY="10.0" prefHeight="71.0" prefWidth="105.0" text="Add Buyer" />
+            <JFXButton accessibleText="three" layoutX="10.0" layoutY="10.0" prefHeight="67.0" prefWidth="116.0" text="Add Customer" />
+            <JFXButton accessibleText="four" layoutX="115.0" layoutY="10.0" prefHeight="71.0" prefWidth="105.0" text="Add Stock" />
+            <JFXButton accessibleText="six" layoutX="220.0" layoutY="10.0" onAction="#callRep" prefHeight="67.0" prefWidth="93.0" text="Reports" />
+            <JFXButton accessibleText="seven" layoutX="535.0" layoutY="10.0" prefHeight="67.0" prefWidth="103.0" text="User Details" />
+            <JFXButton accessibleText="eight" prefHeight="67.0" prefWidth="108.0" text="Delete User" />
+         </children>
+      </HBox>
+      <Label fx:id="title_lbl" layoutX="623.0" layoutY="81.0">
+         <font>
+            <Font name="Ubuntu Mono" size="48.0" />
+         </font>
+      </Label>
+      <JFXDrawer fx:id="reportsDrawer" defaultDrawerSize="230.0" direction="BOTTOM" layoutX="295.0" layoutY="677.0" overLayVisible="false" prefHeight="93.0" prefWidth="768.0" />
+      <Label fx:id="datelbl" layoutX="1168.0" layoutY="14.0" text="Date" textFill="#462a19">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

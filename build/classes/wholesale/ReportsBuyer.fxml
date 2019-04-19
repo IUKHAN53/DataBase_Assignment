@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="1210.0" style="-fx-background-color: skyBlue;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="wholesale.ReportsBuyerController">
+    <stylesheets>
+        <URL value="@UIs.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="417.0" layoutY="34.0" text="Buyer Reports">
+         <font>
+            <Font name="Ubuntu Mono" size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="132.0" prefHeight="25.0" prefWidth="89.0" text="Total Buyers" />
+      <TextField fx:id="totBuyerFld" editable="false" layoutX="231.0" layoutY="131.0" />
+      <Label layoutX="106.0" layoutY="219.0" prefHeight="25.0" prefWidth="125.0" text="TotalStocksBought" />
+      <TextField fx:id="totStockFld" editable="false" layoutX="231.0" layoutY="218.0" />
+      <Label layoutX="157.0" layoutY="321.0" prefHeight="25.0" prefWidth="75.0" text="Total Paid" />
+      <TextField fx:id="TotPaidFld" editable="false" layoutX="231.0" layoutY="320.0" />
+      <Label layoutX="83.0" layoutY="417.0" prefHeight="25.0" prefWidth="147.0" text="Highest Stock Bought" />
+      <TextField fx:id="MethodFld" editable="false" layoutX="231.0" layoutY="417.0" />
+      <TableView fx:id="BuyerTable" layoutX="475.0" layoutY="106.0" prefHeight="413.0" prefWidth="614.0">
+        <columns>
+          <TableColumn fx:id="NameCol" prefWidth="110.0" text="Name" />
+          <TableColumn fx:id="StockCol" prefWidth="101.0" text="Stock" />
+            <TableColumn fx:id="QuantityCol" prefWidth="103.0" text="Quantity" />
+            <TableColumn fx:id="Pricecol" prefWidth="102.0" text="Price" />
+            <TableColumn fx:id="PaidCol" prefWidth="76.0" text="Paid" />
+            <TableColumn fx:id="MethodCol" prefWidth="121.0" text="Method" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="226.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.DrawerContentController">
+   <children>
+      <ImageView fitHeight="130.0" fitWidth="226.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Resources/admin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="loginasLbl" alignment="CENTER" prefHeight="40.0" prefWidth="260.0" text="LogedIn as:">
+         <font>
+            <Font name="Ubuntu" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton accessibleText="userdetails" layoutX="10.0" layoutY="254.0" prefHeight="49.0" prefWidth="226.0" stylesheets="@UIs.css" text="User Details">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="buyer" prefHeight="36.0" prefWidth="260.0" stylesheets="@UIs.css" text="Add Buyer">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="user" layoutX="10.0" layoutY="160.0" prefHeight="39.0" prefWidth="260.0" stylesheets="@UIs.css" text="Add User">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="stock" layoutX="10.0" layoutY="254.0" prefHeight="25.0" prefWidth="260.0" stylesheets="@UIs.css" text="Add Stock">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="customer" layoutX="10.0" layoutY="207.0" prefHeight="35.0" prefWidth="260.0" stylesheets="@UIs.css" text="Add Customer">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="deluser" layoutX="10.0" layoutY="160.0" prefHeight="14.0" prefWidth="260.0" stylesheets="@UIs.css" text="Delete User">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="viewstock" layoutX="10.0" layoutY="207.0" prefHeight="4.0" prefWidth="260.0" stylesheets="@UIs.css" text="View Stocks">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="logout" layoutX="10.0" layoutY="348.0" prefHeight="32.0" prefWidth="260.0" stylesheets="@UIs.css" text="Logout">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="exit" layoutX="10.0" layoutY="489.0" prefHeight="30.0" prefWidth="260.0" stylesheets="@UIs.css" text="Exit">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="BOTTOM_CENTER" prefHeight="175.0" prefWidth="226.0" text="App Version 1.1" textFill="#3c04f2">
+         <font>
+            <Font name="Ubuntu Mono" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

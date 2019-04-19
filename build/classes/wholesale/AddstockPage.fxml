@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1233.0" style="-fx-background-color: skyblue;" stylesheets="@UIs.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.AddstockPageController">
+   <children>
+      <Label layoutX="476.0" layoutY="21.0" prefHeight="48.0" prefWidth="282.0" style="-fx-alignment: center;" text="Add Stock" textFill="#0f1314">
+         <font>
+            <Font name="Ubuntu Mono" size="60.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="NameFld" layoutX="408.0" layoutY="114.0" prefHeight="48.0" prefWidth="418.0" promptText="Name" />
+      <TextField fx:id="QuantityFld" layoutX="408.0" layoutY="191.0" prefHeight="48.0" prefWidth="418.0" promptText="Quantity" />
+      <TextArea fx:id="CommentFld" layoutX="408.0" layoutY="362.0" prefHeight="143.0" prefWidth="418.0" promptText="Comments" />
+      <TextField fx:id="PriceFld" layoutX="408.0" layoutY="267.0" prefHeight="48.0" prefWidth="418.0" promptText="Price per item" />
+      <JFXButton defaultButton="true" layoutX="557.0" layoutY="528.0" onAction="#CofirmAdd" prefHeight="63.0" prefWidth="119.0" stylesheets="@UIs.css" text="Add" />
+   </children>
+</AnchorPane>

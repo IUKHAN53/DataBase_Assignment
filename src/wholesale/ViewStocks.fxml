@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="1210.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.ViewStocksController">
+   <children>
+      <Label alignment="CENTER" layoutX="416.0" layoutY="14.0" prefHeight="61.0" prefWidth="402.0" text="Stock Details">
+         <font>
+            <Font name="Ubuntu Mono" size="59.0" />
+         </font>
+      </Label>
+      <TableView fx:id="stockTable" layoutX="476.0" layoutY="85.0" prefHeight="428.0" prefWidth="685.0" style="-fx-background-color: lightgrey;">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="174.0" text="Name" />
+            <TableColumn fx:id="PriceCol" prefWidth="151.0" text="Price Per Item" />
+            <TableColumn fx:id="QuantityCol" prefWidth="158.0" text="Quantity" />
+            <TableColumn fx:id="CommentsCol" prefWidth="179.0" text="Comments" />
+         </columns>
+      </TableView>
+      <TextField fx:id="TotPrice" layoutX="207.0" layoutY="161.0" prefHeight="32.0" prefWidth="209.0" />
+      <Label layoutX="81.0" layoutY="231.0" prefHeight="32.0" prefWidth="106.0" text="Max Price" />
+      <TextField fx:id="MaxPrice" layoutX="207.0" layoutY="231.0" prefHeight="32.0" prefWidth="209.0" />
+      <Label layoutX="81.0" layoutY="161.0" prefHeight="32.0" prefWidth="106.0" text="Total Price" />
+      <TextField fx:id="totQuantity" layoutX="207.0" layoutY="305.0" prefHeight="32.0" prefWidth="209.0" />
+      <Label layoutX="81.0" layoutY="305.0" prefHeight="32.0" prefWidth="106.0" text="Total Quantity" />
+      <TextField fx:id="MAxStock" layoutX="207.0" layoutY="380.0" prefHeight="32.0" prefWidth="209.0" />
+      <Label layoutX="60.0" layoutY="380.0" prefHeight="32.0" prefWidth="148.0" text="Maximum Stock Price" />
+      <TextField fx:id="totStock" layoutX="207.0" layoutY="91.0" prefHeight="32.0" prefWidth="209.0" />
+      <Label layoutX="81.0" layoutY="91.0" prefHeight="32.0" prefWidth="106.0" text="Total Stocks" />
+      <TextField fx:id="LowStock" layoutX="207.0" layoutY="448.0" prefHeight="32.0" prefWidth="209.0" />
+      <Label layoutX="68.0" layoutY="448.0" prefHeight="32.0" prefWidth="132.0" text="Lowest Stock Price" />
+   </children>
+</AnchorPane>

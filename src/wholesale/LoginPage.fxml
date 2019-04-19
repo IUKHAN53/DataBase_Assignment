@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.LoginPageController">
+   <children>
+      <ImageView fitHeight="615.0" fitWidth="665.0" layoutX="-1.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../Resources/Background-Images-843.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="66.0" layoutY="49.0" opacity="0.68" prefHeight="517.0" prefWidth="532.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXButton fx:id="LoginBtn" buttonType="RAISED" defaultButton="true" layoutX="214.0" layoutY="410.0" onAction="#Login" prefHeight="61.0" prefWidth="112.0" ripplerFill="#0b0d0d" style="-fx-background-color: #4fb0b1;" text="Login">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="UserFld" focusColor="#06e802" layoutX="113.0" layoutY="201.0" prefHeight="46.0" prefWidth="314.0" promptText="Username" unFocusColor="#833737">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="140.0" fitWidth="515.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Resources/download.jpeg" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="PassFld" layoutX="113.0" layoutY="302.0" prefHeight="46.0" prefWidth="314.0" promptText="Password">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

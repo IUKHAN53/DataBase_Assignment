@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="780.0" stylesheets="@UIs.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton accessibleText="sales" prefHeight="93.0" prefWidth="143.0" text="Sales Reports" />
+      <JFXButton accessibleText="buyers" layoutX="10.0" layoutY="10.0" prefHeight="93.0" prefWidth="135.0" text="Buyers Reports" />
+      <JFXButton accessibleText="Timely" layoutX="105.0" layoutY="10.0" prefHeight="93.0" prefWidth="148.0" text="TimeWise Reports" />
+      <JFXButton accessibleText="users" layoutX="10.0" layoutY="10.0" prefHeight="93.0" prefWidth="114.0" text="User Reports" />
+      <JFXButton accessibleText="stocks" prefHeight="93.0" prefWidth="123.0" text="Stocks Reports" />
+      <JFXButton accessibleText="logs" prefHeight="93.0" prefWidth="116.0" text="Log Reports" />
+   </children>
+</HBox>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" opacity="0.81" prefHeight="570.0" prefWidth="1210.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.ViewUserController">
+   <children>
+      <Label layoutX="475.0" layoutY="14.0" text="View User">
+         <font>
+            <Font name="Ubuntu Mono" size="58.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="NameFld" layoutX="282.0" layoutY="119.0" prefHeight="28.0" prefWidth="261.0" />
+      <JFXTextField fx:id="UnameFld" layoutX="679.0" layoutY="121.0" prefHeight="26.0" prefWidth="250.0" />
+      <JFXTextField fx:id="EmailFld" layoutX="462.0" layoutY="340.0" prefHeight="28.0" prefWidth="261.0" />
+      <JFXTextField fx:id="TypeFld" editable="false" layoutX="674.0" layoutY="217.0" prefHeight="26.0" prefWidth="250.0" />
+      <JFXTextField fx:id="DesigFld" editable="false" layoutX="290.0" layoutY="454.0" prefHeight="28.0" prefWidth="261.0" />
+      <JFXTextField fx:id="AdrsFld" layoutX="689.0" layoutY="447.0" prefHeight="35.0" prefWidth="261.0" />
+      <Label layoutX="209.0" layoutY="124.0" prefHeight="28.0" prefWidth="57.0" text="Name">
+         <font>
+            <Font name="Ubuntu Mono" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="345.0" prefHeight="28.0" prefWidth="57.0" text="Email">
+         <font>
+            <Font name="Ubuntu Mono" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="124.0" prefHeight="28.0" prefWidth="86.0" text="UserName">
+         <font>
+            <Font name="Ubuntu Mono" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="577.0" layoutY="220.0" prefHeight="28.0" prefWidth="86.0" text="UserType">
+         <font>
+            <Font name="Ubuntu Mono" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="459.0" prefHeight="28.0" prefWidth="118.0" text="Designation">
+         <font>
+            <Font name="Ubuntu Mono" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="595.0" layoutY="459.0" prefHeight="28.0" prefWidth="76.0" text="Address">
+         <font>
+            <Font name="Ubuntu Mono" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="489.0" layoutY="125.0" onAction="#chngName" text="Change" />
+      <JFXButton layoutX="669.0" layoutY="346.0" onAction="#ChngEmail" text="Change" />
+      <JFXButton layoutX="874.0" layoutY="125.0" onAction="#ChngUname" text="Change" />
+      <JFXButton layoutX="889.0" layoutY="460.0" onAction="#chngAdress" text="Change" />
+      <JFXTextField fx:id="PassFld" layoutX="282.0" layoutY="217.0" prefHeight="28.0" prefWidth="261.0" />
+      <Label layoutX="180.0" layoutY="222.0" prefHeight="28.0" prefWidth="86.0" text="Password">
+         <font>
+            <Font name="Ubuntu Mono" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="489.0" layoutY="223.0" onAction="#ChngPass" text="Change" />
+   </children>
+</AnchorPane>

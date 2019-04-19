@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1233.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholesale.AddBuyerController">
+   <children>
+      <Label alignment="CENTER" layoutX="436.0" layoutY="7.0" prefHeight="59.0" prefWidth="336.0" text="Add Buyer">
+         <font>
+            <Font name="Ubuntu Mono" size="61.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <TextField fx:id="NameFld" layoutX="281.0" layoutY="99.0" prefHeight="42.0" prefWidth="290.0" promptText="Name" />
+      <TextField fx:id="phoneFld" layoutX="617.0" layoutY="99.0" prefHeight="42.0" prefWidth="290.0" promptText="PhoneNo" />
+      <ComboBox fx:id="PaymentFld" layoutX="436.0" layoutY="474.0" prefHeight="42.0" prefWidth="336.0" promptText="Payment Method" />
+      <ComboBox fx:id="StockFld" layoutX="436.0" layoutY="187.0" prefHeight="42.0" prefWidth="336.0" promptText="Stocks" />
+      <Spinner fx:id="QuantitySpinner" editable="true" layoutX="436.0" layoutY="268.0" prefHeight="42.0" prefWidth="336.0" />
+      <TextField fx:id="perprice" editable="false" layoutX="613.0" layoutY="342.0" prefHeight="42.0" prefWidth="159.0" />
+      <TextField fx:id="totalprice" editable="false" layoutX="613.0" layoutY="405.0" prefHeight="42.0" prefWidth="159.0" />
+      <Label layoutX="436.0" layoutY="342.0" prefHeight="42.0" prefWidth="146.0" text="Price Per Item:">
+         <font>
+            <Font name="Ubuntu Mono" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="405.0" prefHeight="42.0" prefWidth="146.0" text="Total Price:">
+         <font>
+            <Font name="Ubuntu Mono" size="19.0" />
+         </font>
+      </Label>
+      <JFXButton defaultButton="true" layoutX="538.0" layoutY="536.0" onAction="#AddBuyer" prefHeight="64.0" prefWidth="133.0" stylesheets="@UIs.css" text="Add" />
+   </children>
+</AnchorPane>
